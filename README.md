@@ -2,7 +2,7 @@
 - @seonghun120614 📫
 - MBTI : INFJ ⚖
 - I’m currently learning R, Python, ML, Math, Statistics 📜
-- >> Born in 2000 << ♟
+- \>\> Born in 2000 << ♟
 - How to reach me >> seonghun120614.gmail.com 🔑
 
 ## **Interesting**
@@ -30,4 +30,4 @@
 
 
 ## **Completed Reading**
- + ![데이터 사이언스 스쿨](https://datascienceschool.net/intro.html)
+ + [데이터 사이언스 스쿨](https://datascienceschool.net/intro.html)
