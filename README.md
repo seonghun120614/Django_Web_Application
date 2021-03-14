@@ -31,3 +31,5 @@
 
 ## **Completed Reading**
  + [데이터 사이언스 스쿨](https://datascienceschool.net/intro.html)
+ + [분류성능평가지표](https://sumniya.tistory.com/26)
+ + [sklearn-learn 데이터 scaling하기](https://mkjjo.github.io/python/2019/01/10/scaler.html)
