@@ -34,3 +34,4 @@
  + [분류성능평가지표](https://sumniya.tistory.com/26)
  + [sklearn-learn 데이터 scaling하기](https://mkjjo.github.io/python/2019/01/10/scaler.html)
  + [Minimal Mistakes 편집](https://ansohxxn.github.io/blog/jekyll-directory-structure/)
+ + [Minimal Mistakes Posts 작성법](https://niklasjang.github.io/guide/how-to-use-markdown/)
