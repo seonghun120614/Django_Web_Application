@@ -36,3 +36,4 @@
  + [Minimal Mistakes 편집](https://ansohxxn.github.io/blog/jekyll-directory-structure/)
  + [Minimal Mistakes Posts 작성법](https://niklasjang.github.io/guide/how-to-use-markdown/)
  + [sung kim 교수님의 ML 강의](https://www.youtube.com/channel/UCML9R2ol-l0Ab9OXoNnr7Lw)
+ + [Numpy 100제](https://github.com/rougier/numpy-100/blob/master/100_Numpy_exercises.md)
