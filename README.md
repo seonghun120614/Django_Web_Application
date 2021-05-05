@@ -39,6 +39,8 @@
  + BackEnd - Python > Network > Django > Routing > DB(SQL, NoSQL)
  + Statistical Analysis - Excel > R > SPSS, SAS
  + Distributed Computing - JAVA > Hadoop > Spark
+ + Math(Statistics, Calculus, Linear Algebra, Numerical Analysis)
+ + CS(-)
 
 ## **Info.**
  + [데이터 사이언스 스쿨](https://datascienceschool.net/intro.html)
