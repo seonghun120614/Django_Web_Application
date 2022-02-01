@@ -1,26 +1,15 @@
 ## **Profile**
 - Name : Park Seong Hun 📫
-- MBTI : INFJ ⚖
 - I’m currently learning Programming(R, Python), ML, Math, Statistics 📜
 - \>\> Born in 2000 << ♟
 - How to reach me >> seonghun120614.gmail.com 🔑
-- My [Story](https://seonghun120614.github.io/)
+- My [Project](https://seonghun120614.github.io/)
 - My [Study](https://seonghun120614.tistory.com/)
 - My Note (--None-- : i'll use brunch app)
 - My Project[This github!]
 
-
-## **Interesting**
- + Style ✏
- + Design🎀
- + Cook 🍕
- + Music 🎧
- + Sleep... 💭
-
-
-
 ## **Career**
- + Be in GyeongSang Uni. [ 2019 ~  ]
+ + in Snust ITM Uni. [ 2022 ~  ]
 
 
 
@@ -35,7 +24,7 @@
  + Hadoop 📃
 
 ## **Procedure**
- + Machine Learning - Python (> Numpy) > Pandas > Matplotlib > Seaborn > Keras > Tensorflow, Pytorch, CoreNLP, NLTK, ...
+ + Machine Learning - Python (> Numpy) > Pandas > Matplotlib > Seaborn > Tensorflow, Pytorch, CoreNLP, NLTK, ...
  + BackEnd - Python > Network > Django > Routing > DB(SQL, NoSQL)
  + Statistical Analysis - Excel > R > SPSS, SAS
  + Distributed Computing - JAVA > Hadoop > Spark
