@@ -13,12 +13,11 @@
 
 
 
-## **Study**
+## **Studying**
  + Mathematics 📕
  + Statistics 📗
  + Machine Learning 📓
- + Web - Front(HTML, CSS, Javascript) 📙
- + Web - Back(Python[Django], Node.js[Express]) 📒
+ + Web - HTML, CSS, Javascript, Django, Nodejs 📒
  + R Programming 📔
  + Python Programming 📖
  + Hadoop 📃
