@@ -3,10 +3,9 @@
 - I’m currently learning Programming(R, Python), ML, Math, Statistics 📜
 - \>\> Born in 2000 << ♟
 - How to reach me >> seonghun120614.gmail.com 🔑
-- My [Project](https://seonghun120614.github.io/)
 - My [Study](https://seonghun120614.tistory.com/)
 - My Note (--None-- : i'll use brunch app)
-- My Project[This github!]
+- My Project
 
 ## **Career**
  + in Snust ITM Uni. [ 2022 ~  ]
