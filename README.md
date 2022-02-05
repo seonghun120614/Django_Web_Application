@@ -1,19 +1,18 @@
 ## **Studying**
- + Mathematics 📕
+ + Math 📕
  + Statistics 📗
- + Machine Learning 📓
- + Web - HTML, CSS, Javascript, Django, Nodejs 📒
- + R Programming 📔
- + Python Programming 📖
- + Hadoop 📃
+ + Data Analystics 📓
+ + FrontEnd - HTML, CSS, Javascript 📒
+ + BackEnd - Python(Django)
+ + DBMS - MySQL
+ + Programming Language - ❤️Python, R, Java, C 📔
+ + Library - Pytorch, TensorFlow, ...
 
 ## **Procedure**
  + Machine Learning - Python (> Numpy) > Pandas > Matplotlib > Seaborn > Tensorflow, Pytorch, CoreNLP, NLTK, ...
- + BackEnd - Python > Network > Django > Routing > DB(SQL, NoSQL)
- + Statistical Analysis - Excel > R > SPSS, SAS
- + Distributed Computing - JAVA > Hadoop > Spark
- + Math(Statistics, Calculus, Linear Algebra, Numerical Analysis)
- + CS(-)
+ + BackEnd - Python > Network > Django > DBMS(SQL, NoSQL, postgreSQL, MongoDB, MariaDB, ...)
+ + Statistical Analysis - Excel > R > SPSS, SAS > ...
+ + Distributed Computing - JAVA > Hadoop > Spark > ...
 
 ## **Info.**
  + [데이터 사이언스 스쿨](https://datascienceschool.net/intro.html)
