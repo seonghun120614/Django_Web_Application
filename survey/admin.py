@@ -10,13 +10,27 @@ class ChoiceInline(admin.TabularInline) : # Tabular 형태로 보여주기
 
 class QuestionAdmin(admin.ModelAdmin) :
     fieldsets = [
-        (None,          {'fields': ['question_text']}),
-        ('Date information', {'fields': ['pub_date']}),
+        (
+            None,
+            {
+                'fields': ['question_text'],
+            }
+        ),
+        (
+            'Date information', 
+            {
+                'fields': ['pub_date'],
+                'classes': ['collapse'],
+            }
+        ),
     ]
+
     inlines = [ChoiceInline]
     list_display = ('question_text', 'pub_date', 'was_published_recently')
     list_filter = ['pub_date']
     search_fields = ['question_text']
 
-# admin 사이트에 로그인하면 Question, QuestionAdmin GUI를 띄우게함
+
+# admin 사이트에 Question을 추가하고,
+# QuestionAdmin을 추가함
 admin.site.register(Question, QuestionAdmin)
