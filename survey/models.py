@@ -3,8 +3,6 @@ import datetime
 from django.db import models
 from django.utils import timezone
 
-# Djang는 1:1 n:1 1:n의 데이터베이스 관계들을 지원
-
 class Question(models.Model) :
     
     question_text = models.CharField(max_length = 200)
@@ -15,6 +13,9 @@ class Question(models.Model) :
     
     def was_published_recently(self) :
         return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
+    was_published_recently.admin_order_filed = 'pub_date'
+    was_published_recently.boolean = True
+    was_published_recently.short_description = 'Published recently?'
 
 
 
@@ -28,10 +29,6 @@ class Choice(models.Model) :
     def __str__(self) :
         return self.choice_text
 
-
-# 각각의 모델은 Table의 구조를 정의 (=Scheme라고도 하나?)
-# 어쨋든 Table의 Data형식을 지정해줌
-# 각각의 Columns는 Field라고 불림
 
 class Test(models.Model):
 
