@@ -1,7 +1,7 @@
-from django.http import HttpResponse, Http404
+from django.http import HttpResponse, Http404, HttpResponseRedirect
 from django.template import loader
-
 from .models import Question
+from django.shortcuts import render, get_object_or_404
 
 # from django.shortcuts import render
 #
@@ -22,7 +22,6 @@ frame = """
 <html>
     <head lang="ko">{head}</head>
     <body>
-        {view}
     </body>
 </html>
 """
@@ -38,31 +37,23 @@ head = f"""
 
 
 def index(request) :
-
-    global frame, head
-
     latest_question_list = Question.objects.order_by('-pub_date')[:5]
-    template = loader.get_template('survey/index.html')
-
     context = {
-        'latest_question_list' : latest_question_list
+        'latest_question_list': latest_question_list,
     }
 
-    view = template.render(context, request)
+    print("=======================================")
+    print(context)
+    print("=======================================")
+    print(render(request, "survey/index.html"), context)
+    print("=======================================")
 
-    return HttpResponse(frame.format(head = head, view = view))
+    return render(request, 'survey/index.html', context)
 
 
 def detail(request, question_id) :
-
-    template = loader.get_template('survey/detail.html')
-
-    try :
-        question = Question.objects.get(pk = question_id)
-    except :
-        raise Http404("Question does not exist")
-    
-    return HttpResponse(template.render({'question' : question}, request))
+    question = get_object_or_404(Question, pk=question_id)
+    return render(request, 'survey/detail.html', {"question" : question})
 
 
 def results(request, question_id) :
@@ -71,4 +62,16 @@ def results(request, question_id) :
 
 
 def vote(request, question_id) : 
-    return HttpResponse("You're voting on question %s" % question_id)
+    question = get_object_or_404(Question, pk=question_id)
+    try :
+        selected_choice = question.choice_set.get(pk=request.POST['choice'])
+    except (KeyError, Choice.DoesNotExist):
+        return render(request, 'survey/detail.html', {
+            'question': question,
+            'error_message': "You didn't select a choice.",
+        })
+    else :
+        selected_choice.votes += 1
+        selected_choice.save()
+
+        return HttpResponseRedirect(reverse('survey:results', arg=(question_id, id)))
