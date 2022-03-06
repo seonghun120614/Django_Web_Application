@@ -43,21 +43,25 @@ class ResultsView(generic.DetailView) :
 
 
 def vote(request, question_id) : 
-    
-    question = get_object_or_404(Question, pk=question_id)
 
-    try :
-        selected_choice = question.choice_set.get(pk=request.POST['choice'])
+    if request.method = "GET" :
+        pass
     
-    except (KeyError, Choice.DoesNotExist):
-        return render(request, 'survey/detail.html', {
-            'question': question,
-            'error_message': "You didn't select a choice.",
-        })
-    else :
-        selected_choice.vote += 1
-        selected_choice.save()
+    elif request.method = "POST" :
+        question = get_object_or_404(Question, pk=question_id)
 
-        # post 데이터를 성공적으로 처리한 후는 항상 HttpResponseRedirect를 반환해야함.
-        # reverse는 '/polls/3/results/'를 반환
-        return HttpResponseRedirect(reverse('survey:results', args=(question_id,)))
+        try :
+            selected_choice = question.choice_set.get(pk=request.POST['choice'])
+        
+        except (KeyError, Choice.DoesNotExist):
+            return render(request, 'survey/detail.html', {
+                'question': question,
+                'error_message': "You didn't select a choice.",
+            })
+        else :
+            selected_choice.vote += 1
+            selected_choice.save()
+
+            # post 데이터를 성공적으로 처리한 후는 항상 HttpResponseRedirect를 반환해야함.
+            # reverse는 '/polls/3/results/'를 반환
+            return HttpResponseRedirect(reverse('survey:results', args=(question_id,)))
