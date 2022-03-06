@@ -44,10 +44,10 @@ class ResultsView(generic.DetailView) :
 
 def vote(request, question_id) : 
 
-    if request.method = "GET" :
+    if request.method == "GET" :
         pass
     
-    elif request.method = "POST" :
+    elif request.method == "POST" :
         question = get_object_or_404(Question, pk=question_id)
 
         try :
